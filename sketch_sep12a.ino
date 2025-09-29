@@ -12,7 +12,7 @@ char pass[] = "123456789"; // Replace with your WiFi password
 
 // ================== PIN DEFINITIONS ==================
 #define DHT_PIN 23           // DHT22 connected to GPIO23
-#define DHT_TYPE DHT11       // DHT22 sensor type
+#define DHT_TYPE DHT11       // DHT11 sensor type
 #define SOIL_MOISTURE_PIN 34  // Soil moisture sensor to GPIO4 (analog pin)
 #define RELAY_PIN 25         // Relay IN pin connected to GPIO25 (OUTPUT capable)
 #define LED_PIN 2            // ESP32 built-in LED
