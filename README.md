@@ -39,10 +39,13 @@ Sistem dapat memonitor suhu, kelembaban udara, kelembaban tanah, serta mengontro
 ---
 
 ## 📲 Blynk Virtual Pin Mapping
-| Virtual Pin | Data/Control          |
-|-------------|----------------------|
-| V0          | Temperature (°C)     |
-| V1          | Humidity (%)         |
-| V2          | Soil Moisture (ADC)  |
-| V3          | Pump Status (ON/OFF) |
-| V4          | Manual Pump Control  |
+| Virtual Pin |                  Data/Control                  |
+|-------------|------------------------------------------------|
+| V0          | Temperature (°C)                               |
+| V1          | Humidity (%)                                   |
+| V2          | Soil Moisture (ADC)                            |
+| V3          | Pump Status (ON/OFF)                           |
+| V4          | Manual Pump Control (Button / Switch)          |
+| V5          | System Status (String text → Label Widget)     |
+| V6          | Last Watering Time (Text/Label)                |
+| V7          | Auto Mode Switch (Toggle between Auto/Manual)  |
