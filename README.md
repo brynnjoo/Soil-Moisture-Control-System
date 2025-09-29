@@ -1,56 +1,79 @@
-# 🌱 ESP32 Soil Moisture Control System with Blynk Cloud
+🌱 ESP32 Smart Soil Moisture Control System with Blynk Cloud
 
-Proyek ini adalah **sistem kontrol kelembaban tanah otomatis** menggunakan **ESP32**, **sensor soil moisture**, **sensor DHT11/DHT22**, dan **relay untuk pompa air**.  
-Sistem dapat memonitor suhu, kelembaban udara, kelembaban tanah, serta mengontrol pompa secara otomatis maupun manual melalui **Blynk IoT Cloud**.
+This project is an automatic soil moisture control system powered by ESP32, featuring a Soil Moisture Sensor, DHT11/DHT22, and a Relay Module for Water Pump Control.
+The system monitors temperature, humidity, and soil moisture, while controlling the water pump automatically or manually via Blynk IoT Cloud.
 
----
+⚡ Features
 
-## ⚡ Fitur
-- Membaca data **suhu** (°C) dan **kelembaban udara** (%) dari sensor DHT.
-- Membaca **kelembaban tanah** menggunakan soil moisture sensor.
-- Mengontrol **relay pompa air** secara otomatis berdasarkan kondisi:
-  - Tanah kering
-  - Kelembaban udara rendah
-  - Suhu terlalu tinggi
-- **Kontrol manual** pompa melalui aplikasi Blynk.
-- Monitoring realtime melalui **Blynk Cloud (App & Web Dashboard)**.
-- LED indikator status (berkedip saat idle, menyala solid saat pompa aktif).
+📊 Real-time monitoring of:
 
----
+Temperature (°C)
 
-## 🛠️ Hardware yang Digunakan
-- ESP32 Development Board
-- DHT11 atau DHT22 (Sensor Suhu & Kelembaban Udara)
-- Soil Moisture Sensor (Analog)
-- Relay 5V
-- Pompa Air Mini (opsional)
-- Breadboard, jumper wire, dan catu daya
+Air Humidity (%)
 
----
+Soil Moisture Level
 
-## 📦 Software yang Dibutuhkan
-- [Arduino IDE](https://www.arduino.cc/en/software)
-- [ESP32 Board Manager](https://github.com/espressif/arduino-esp32)
-- [Blynk Library](https://github.com/blynkkk/blynk-library)
-- [DHT Sensor Library](https://github.com/adafruit/DHT-sensor-library)
+💧 Automatic water pump control based on conditions:
 
----
+Soil is too dry
 
-## ⚙️ Konfigurasi Pin
-| Komponen          | Pin ESP32 |
-|-------------------|-----------|
-| DHT11/DHT22       | GPIO 23   |
-| Soil Moisture     | GPIO 4    |
-| Relay             | GPIO 25   |
-| LED (Onboard)     | GPIO 2    |
+Low air humidity
 
----
+High temperature
 
-## 📲 Blynk Virtual Pin Mapping
-| Virtual Pin | Data/Control          |
-|-------------|----------------------|
-| V0          | Temperature (°C)     |
-| V1          | Humidity (%)         |
-| V2          | Soil Moisture (ADC)  |
-| V3          | Pump Status (ON/OFF) |
-| V4          | Manual Pump Control  |
+📱 Manual control of the water pump via Blynk App or Web Dashboard.
+
+🌐 Seamless IoT integration with Blynk Cloud for remote monitoring and control.
+
+💡 Built-in LED indicator:
+
+Blinking → System idle
+
+Solid ON → Pump active
+
+🛠️ Hardware Requirements
+
+ESP32 Development Board
+
+DHT11 / DHT22 (Temperature & Humidity Sensor)
+
+Soil Moisture Sensor (Analog)
+
+5V Relay Module
+
+Mini Water Pump
+
+Breadboard, Jumper Wires, and Power Supply
+
+📦 Software Requirements
+
+Arduino IDE
+
+ESP32 Board Manager
+
+Blynk Library
+
+Adafruit DHT Sensor Library
+
+⚙️ Pin Configuration
+Component	ESP32 Pin
+DHT11/DHT22	GPIO 23
+Soil Moisture	GPIO 4
+Relay Module	GPIO 25
+Onboard LED	GPIO 2
+📲 Blynk Virtual Pin Mapping
+Virtual Pin	Function
+V0	Temperature (°C)
+V1	Air Humidity (%)
+V2	Soil Moisture (ADC)
+V3	Pump Status (ON/OFF)
+V4	Manual Pump Control
+🚀 How It Works
+
+Sensors collect data (temperature, humidity, and soil moisture).
+
+ESP32 processes the readings and decides whether to activate the pump.
+
+Data is sent to Blynk Cloud, where you can monitor values in real-time.
+
+Pump can also be controlled manually via Blynk App/Web Dashboard.
