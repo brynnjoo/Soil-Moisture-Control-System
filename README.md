@@ -32,7 +32,7 @@ Sistem dapat memonitor suhu, kelembaban udara, kelembaban tanah, serta mengontro
 | Komponen          | Pin ESP32 |
 |-------------------|-----------|
 | DHT11             | GPIO 23   |
-| Soil Moisture     | GPIO 4    |
+| Soil Moisture     | GPIO 34    |
 | Relay             | GPIO 25   |
 | LED (Onboard)     | GPIO 2    |
 
